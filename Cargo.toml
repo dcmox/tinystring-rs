@@ -7,7 +7,7 @@ description = "A string compression tool with dictionary generation."
 license = "MIT"
 license-file = "LICENSE"
 readme = "README.md"
-keywords = ["tiny string", "compression"]
+keywords = ["tinystring", "compression", "smaz", "dictionary"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
