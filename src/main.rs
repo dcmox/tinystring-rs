@@ -1,18 +1,3 @@
-# tiny-string-rs
-tiny-string-rs is a library built for Rust to compress strings using a generated dictionary. Use training data to improve the performance depending on the type of data you want to compress.
-
-## Dictionary slot length
-When generating a dictionary, you can specify the slot length as the second parameter, eg:
-```rust
-let dict: Vec<String> = generate_dictionary(contents, 5); // slot length of 5
-```
-Note: The larger the slot length, the more computationally expensive it will be for generating a dictionary. If you choose a slot size larger than 6, it is recommended that you cache the dictionary for re-use.
-
-## Dictionary size
-Dictionary size is currently fixed at 896. The first 128 ASCII characters are reserved for the standard character set. String length can be reduced 40-65% with compression. True compression size (total byte size of string) will be much less than the string length.
-
-## Sample usage
-```rust
 extern crate testmark;
 use testmark::Testmark;
 use testmark::Timer;
@@ -38,4 +23,3 @@ fn main() {
 
     cbench.print();
 }
-```

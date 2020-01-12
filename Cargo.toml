@@ -1,0 +1,18 @@
+[package]
+name = "tinystring"
+version = "0.1.0"
+authors = ["dcmox <dancmox@comcast.net>"]
+edition = "2018"
+description = "A string compression tool with dictionary generation."
+license = "MIT"
+license-file = "LICENSE"
+readme = "README.md"
+keywords = ["tiny string", "compression"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+testmark = "0.1.0"
+
+[profile.dev]
+opt-level=2
